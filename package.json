@@ -23,6 +23,6 @@
     "nodemon": "^2.0.19"
   },
   "dependencies": {
-    "yargs": "^17.5.1"
+    "nanoid": "3.3.4"
   }
 }
