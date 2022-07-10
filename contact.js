@@ -8,8 +8,15 @@ const listContacts = async () => {
     return contacts;
 }
 
-function getContactById(contactId) {
-  // ...твій код
+const getContactById = async (contactId) => {
+    const contacts = await listContacts();
+    const result = contacts.find((e) => e.id === `${contactId}`);  
+    
+    if (!result) {
+        return null;
+    } 
+    return result;
+
 }
 
 function removeContact(contactId) {
